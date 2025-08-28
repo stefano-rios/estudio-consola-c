@@ -1,1 +1,1 @@
-Ejercicios simples de lógicas con C.
+Ejercicios simples de lógica con C.
