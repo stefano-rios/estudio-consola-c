@@ -88,6 +88,75 @@ void main(){
     }
     */
 
+    /*41- Ingresar n números y calcular su media.
+    media = (nromayor + nromenor) / 2.
+
+    int n,media,mayor,menor;
+
+
+    printf("Ingrese numeros y le diremos su media... 0 para salir\n");
+
+    fflush(stdin);
+    scanf("%d",&n);
+    mayor=menor=n;
+
+    do{
+        fflush(stdin);
+        scanf("%d",&n);
+        if (n!=0){
+        if(n>mayor)mayor=n;
+        if(n<menor)menor=n;
+        }
+
+    }while(n!=0);
+
+    media=(mayor+menor)/2;
+
+    printf("Su numero mayor fue <%d>, el menor fue <%d>, y su media es <%d>",mayor,menor,media);
+    */
+
+
+    /*45- Codificar en C un programa que lea 10 caracteres
+    indique cuántas "a" se ingresaron, cuantas "e, i, o, u".
+
+    char c;
+    int i;
+    int ca,ce,ci,co,cu; //contadores de cada vocal
+
+    ca=ce=ci=co=cu=0;
+
+    printf("Ingrese 10 caracteres\n");
+
+    for(i=0;i<10;i++){
+        fflush(stdin);
+        c=getchar();
+
+        switch(c){
+        case 'a':
+            ca++;
+            break;
+        case 'e':
+            ce++;
+            break;
+        case 'i':
+            ci++;
+            break;
+        case 'o':
+            co++;
+            break;
+        case 'u':
+            cu++;
+            break;
+        }
+
+    }
+
+    printf("A = %d, E = %d, I = %d, O = %d, U = %d",ca,ce,ci,co,cu);
+    */
+
+
+
+
 
 
 
