@@ -154,6 +154,88 @@ void main(){
     printf("A = %d, E = %d, I = %d, O = %d, U = %d",ca,ce,ci,co,cu);
     */
 
+    /* Codificar en C un algoritmo que permita ingresar 6 números,
+    ninguno de ellos igual a cero. Se pide sumar los positivos,
+    obtener el producto de los negativos y luego mostrar ambos resultados.
+
+    int suma,multiplicacion,n;
+
+    multiplicacion = 1;
+    suma = 0;
+
+    printf("Ingrese 6 numeros, por favor\n");
+
+    for(int x=0; x<6; x++){
+        fflush(stdin);
+        scanf("%d",&n);
+
+        if(n<0){
+            multiplicacion = multiplicacion * n;
+        }
+        else if (n>0){
+            suma = suma + n;
+        }
+        else {
+            printf("Usted presiono un 0\n");
+            break;
+        }
+    }
+
+    printf("Suma = <%d>, Multuplicacion = <%d>",suma,multiplicacion);
+    */
+
+
+    /*52- Calcular la media de los números
+    de una lista de n números ingresados por teclado
+    (n se ingresa por teclado).
+
+    int n,media,men,may,aux;
+
+    printf("¿ Cuantos numeros desea ingresar ?\n");
+    fflush(stdin);
+    scanf("%d",&n);
+
+    printf("Ingrese <%d> numeros\n",n);
+
+    fflush(stdin);
+    scanf("%d",&aux);
+    men=may=aux;
+
+    for(int x=1; x<n; x++){
+        fflush(stdin);
+        scanf("%d",&aux);
+
+        if(aux<men){
+            men = aux;
+        }
+        else if(aux>may){
+            may = aux;
+        }
+    }
+
+    media = (men+may) / 2;
+
+    printf("La media es = <%d>",media);
+    */
+
+    /*54- Realizar la tabla de multiplicar de un número
+     entre 0 y 10 de forma que se visualice de la
+    siguiente forma:
+    4x1= 4
+    4x2= 8
+    .......... */
+
+    int n;
+    printf("¿ De que numero quiere la tabla de multiplicar ?\n");
+
+    fflush(stdin);
+    scanf("%d",&n);
+
+    for(int x=1; x<=10; x++){
+        printf("%dx%d = %d\n",n,x,(n*x));
+    }
+
+    printf("Fin del programa");
 
 
 
