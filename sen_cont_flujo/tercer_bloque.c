@@ -223,7 +223,7 @@ void main(){
     siguiente forma:
     4x1= 4
     4x2= 8
-    .......... */
+    ..........
 
     int n;
     printf("¿ De que numero quiere la tabla de multiplicar ?\n");
@@ -236,9 +236,67 @@ void main(){
     }
 
     printf("Fin del programa");
+    */
+
+    /*55- Hacer un algoritmo que muestre el mayor y
+    el menor de una serie de 5 números que vamos introduciendo por teclado.
 
 
+    int n,may,men;
 
+    printf("Ingrese una serie de 5 numeros por teclado\n");
+
+    fflush(stdin);
+    scanf("%d",&n);
+    may=men=n;
+
+    for(int x=0; x<4; x++){
+        fflush(stdin);
+        scanf("%d",&n);
+
+        if(n<men)men=n;
+        else if (n>may)may=n;
+    }
+
+    printf("El numero mayor es <%d> y el menor es <%d>", may,men);
+    */
+
+    /*56- Escribir un programa que solicite el ingreso de un número
+    entero y a partir de él, genere una cuenta regresiva hasta cero,
+    mostrando los sucesivos valores hasta el último.
+
+    int n;
+    printf("Ingrese un numero entero\n");
+    fflush(stdin);
+    scanf("%d",&n);
+    printf("Comienza la cuenta regresiva...\n");
+    for(int x=n; x>=0; x--){
+        printf("<%d>\n",x);
+    }
+    */
+
+    /*58 Ingresar caracteres hasta formar palabras y contarlas, es válido
+    contar cantidad de espacio
+
+    int n,cont;
+    cont=1;
+    char c;
+
+    printf("Ingrese oraciones caracter a caracter. #-para salir\n");
+
+    do{
+        fflush(stdin);
+        n=getche();
+        printf("\n");
+
+        if(n==' '){
+            cont++;
+        }
+
+    }while(n!='#');
+
+    printf("Usted ingreso <%d> palabras",cont);
+    */
 
 
 
