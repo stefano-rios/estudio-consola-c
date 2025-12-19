@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 void bubbleSort(int a[], int n) {
     for(int i = 0; i < n - 1; i++) {
@@ -102,7 +104,7 @@ unidimensional, busque el mayor de ellos, calcule el promedio y muestre:
 LOS NÚMEROS INGRESADOS SON : ...................
 EL MAYOR DE ELLOS ES: ....................................
 SU PROMEDIO ES : ............................................
-    */
+
 
     int nums[5];
     printf("Ingrese 5 numeros enteros, por favor\n");
@@ -111,6 +113,76 @@ SU PROMEDIO ES : ............................................
     mostrarArreglo(nums,5);
     busquedaMayorMenor(nums,5);
     busquedaProm(nums,5);
+    */
+
+
+    /*68- Escribir un programa que ingrese una cadena, cuente cuántos de sus elementos son dígitos,
+cuántos de ellos son blancos y muestre:
+LA CANTIDAD DE DÍGITOS QUE APARECEN EN cadena ES cant_digitos Y LA CANTIDAD DE
+BLANCOS ES cant_blanco
+
+    char cadena[50];
+    int cant_dig, cant_blanc;
+    cant_dig=cant_blanc=0;
+    printf("Ingrese una cadena por favor\n");
+    gets(cadena);
+    printf("Su cadena es[%s]\n",cadena);
+
+    for(int x=0; x<strlen(cadena);x++){
+        if(isspace(cadena[x])){
+            cant_blanc++;
+        }
+        if(isdigit(cadena[x])){
+            cant_dig++;
+        }
+
+    }
+
+    printf("Cantidad de digitos = [%d]\n",cant_dig);
+    printf("Cantidad de espacios blancos = [%d]\n",cant_blanc);
+    */
+
+
+    /*75- Hacer un programa que ingrese dos cadenas y:
+    Determine cuál de ellas es mayor en orden alfabético.
+    Concatene ambas cadenas.
+    Determine cuál es la cadena más larga.
+    Invierta la primera cadena ingresada.
+
+
+    char cad1[20], cad2[20],cadAux[20];
+    printf("Introduce dos cadenas por favor\n");
+    fflush(stdin);
+    gets(cad1);
+    fflush(stdin);
+    gets(cad2);
+
+    if(strcmp(cad1,cad2)>0){
+        printf("La cadena mayor es: [%s]\n",cad1);
+    }
+    else {
+        printf("La cadena mayor es: [%s]\n",cad2);
+    }
+
+    strcpy(cadAux,cad1);
+
+
+    printf("La concatenacion es: [%s]\n",strcat(cadAux,cad2));
+
+    if(strlen(cad1)>strlen(cad2)){
+        printf("La cadena mas larga es [%s]\n",cad1);
+    }
+    else{
+        printf("La cadena mas larga es [%s]\n",cad2);
+    }
+
+    printf("La primer cadena invertida es: [%s]\n",strrev(cad1));
+     */
+
+
+
+
+
 
 
 
